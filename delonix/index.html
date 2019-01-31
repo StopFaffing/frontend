@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Delonix Regia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./main.css" /> -->
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="../../Downloads/Ubuntu">
+    <script src="./main.js"></script>
+    <style>
+    body, html   {
+    font-family: 'Ubuntu';
+    font-size: 15px;
+    background-image: url("img/home.jpeg");
+    background-color: #AFD6E7;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    }
+    .navbar-custom {
+        background: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    .navbar-brand , .navbar-nav .nav-item {
+      color: rgb(64, 80, 87);
+      font-size: 16px;
+      font-style: bold;
+    }
+    .navbar-brand:hover , .navbar-nav .nav-item:hover {
+      color: #AFD6E7;
+    }
+    .container {
+      position: absolute;
+      bottom: 20px;
+      left: 13%;
+      text-align: center;
+      border: 2px solid #dedede;
+      background-color: #f1f1f17c;
+      border-radius: 30px;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .btn {
+      border-color: rgb(121, 195, 226);
+      border-width: 2px;
+      border-radius: 40px;
+      padding: 5px 40px 5px 40px; /* top right bottom left */
+
+    }
+    .btn:hover {
+      border-color: rgb(88, 136, 156);
+      background-color: #88888852;
+      border-width: 2px;
+      border-radius: 40px;
+      padding: 5px 40px 5px 40px; /* top right bottom left */
+
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom bg-light">
+  <a class="navbar-brand" href="./index.html">DELONIX REGIA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" href="./rooms.html">Rooms<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="./facilities.html">Facilities</a>
+        <a class="nav-item nav-link" href="./chat.html">Chat</a>
+        <a class="nav-item nav-link" href="./signup.html">Sign Up</a>
+        <a class="nav-item nav-link" href="./login.html">Log In</a>
+    </div>
+  </div>
+</nav>
+
+
+</body>
+<footer>
+  <div class="container">
+    <div class="d-flex flex-row justify-content-around" style="height: 100px;">
+      <div class="p-4">
+        <div class="form-group" style="width: 100px;">
+          <label for="formControlSelectRoom">ROOM TYPE</label>
+          <select class="form-control" id="formControlSelectRoom">
+            <option selected>SELECT</option>
+            <option>DELUXE</option>
+            <option>PREMIUM DELUXE</option>
+            <option>PREMIUM SUITE</option>
+          </select>
+        </div>
+      </div>
+      <div class="p-4">
+        <div class="form-group" style="width: 120px;">
+          <label for="formControlSelectRoom">CHECK IN</label>
+          <input type="date" name="checkin">
+        </div>
+      </div>
+      <div class="p-4">
+        <div class="form-group" style="width: 120px;">
+            <label for="formControlSelectRoom">CHECK OUT</label>
+            <input type="date" name="checkout">
+        </div>
+      </div>
+      <div class="p-4">
+        <div class="form-group" style="width: 120px;">
+          <label class="mr-sm-2" for="inlineFormCustomSelect">NO. OF ROOMS</label>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected>Choose...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="3">4</option>
+            <option value="3">5</option>
+            <option value="3">6</option>
+            <option value="3">7</option>
+            <option value="3">8</option>
+            <option value="3">9</option>
+            <option value="3">10</option>
+          </select>
+          </select>
+        </div>
+      </div>
+      <button onclick="location='./payment.html'"  class="btn text-uppercase" type="submit">book</button> <!-- Please change location to correct payment html-->
+    </div>
+  </div>
+</footer>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Delonix Regia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./main.css" /> -->
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="../../Downloads/Ubuntu">
+    <script src="./main.js"></script>
+    <style>
+    body, html   {
+    font-family: 'Ubuntu';
+    font-size: 15px;
+    background-image: url("img/payment.jpeg");
+    background-color: #AFD6E7;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    }
+    .navbar-custom {
+        background: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    .navbar-brand , .navbar-nav .nav-item {
+      color: rgb(64, 80, 87);
+      font-size: 16px;
+      font-style: bold;
+    }
+    .navbar-brand:hover , .navbar-nav .nav-item:hover {
+      color: #AFD6E7;
+    }
+    .container  {
+        border: 2px solid #dedede;
+        background-color: #f1f1f165;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 40px 13%;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom bg-light">
+  <a class="navbar-brand" href="./index.html">DELONIX REGIA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="./rooms.html">Rooms <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="./facilities.html">Facilities</a>
+      <a class="nav-item nav-link" href="./chat.html">Chat</a>
+      <a class="nav-item nav-link" href="./signup.html">Sign Up</a>
+      <a class="nav-item nav-link" href="./login.html">Log In</a>
+    </div>
+  </div>
+</nav>
+
+<h4>BACK TO CUSTOMISE</h4>
+<br>
+<div class="container">
+<div class="row">
+    <div class="col-6">
+        <!-- Credit Card Form -->
+        <form> <!--add action-->
+            <div class="form-group col-sm-6">
+                <label for="email">E-mail Address</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="name">Name of Cardholder</label>
+                <input type="name" class="form-control" id="name">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="cardNo">Card Number</label>
+                <input type="cardNo" class="form-control" id="cardNo">
+            </div>
+            <div class="form-group col-sm-2">
+                <label for="expirationMonth">Expiration</label>
+                <input type="expirationMonth" class="form-control" id="expirationMonth">
+                <input type="expirationYear" class="form-control" id="expirationYear">
+            </div>
+            <div class="form-group col-sm-2">
+                <label for="cvc">CVC</label>
+                <input type="cvc" class="form-control" id="cvc">
+                <button onclick="location='./qr.html'"type="button" class="btn-dark" style="width: 150px; margin-top: 20px">PAY AND BOOK</button>
+            </div>
+            
+        </form>
+    </div>
+    <div class="col-6">
+        <!-- Booking Info -->
+        <div class="col-sm">
+                <h5>Your room:</h5>
+                <br>
+                <p>room type</p>
+                <p>special requests</p>
+                <p>other requests</p>
+                <br>
+            </div>
+    </div>
+</div>
+</div>
+
+
+
+</body>
+</html>

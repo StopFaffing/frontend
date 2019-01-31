@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Delonix Regia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./main.css" /> -->
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="../../Downloads/Ubuntu">
+    <script src="./main.js"></script>
+    <style>
+    body, html   {
+    font-family: 'Ubuntu';
+    font-size: 15px;
+    background-image: url("img/chat.jpeg");
+    background-color: #000000;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    }
+    .navbar-custom {
+        background: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    .navbar-brand , .navbar-nav .nav-item {
+      color: rgb(64, 80, 87);
+      font-size: 16px;
+      font-style: bold;
+    }
+    .navbar-brand:hover , .navbar-nav .nav-item:hover {
+      color: #AFD6E7;
+    }
+    
+    /* FOR CHAT */
+
+    .chatbox{
+      margin-top: 5%;
+      margin-left: 13%;
+    }
+
+    .container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 30px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+
+.btn-send{
+  background-color: #dfdfdf;
+}
+
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom bg-light">
+    <a class="navbar-brand" href="./index.html">DELONIX REGIA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" href="./rooms.html">Rooms<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="./facilities.html">Facilities</a>
+        <a class="nav-item nav-link" href="./chat.html"><u>Chat</u></a>
+        <a class="nav-item nav-link" href="./signup.html">Sign Up</a>
+        <a class="nav-item nav-link" href="./login.html">Log In</a>
+    </div>
+  </div>
+</nav>
+<div class="chatbox">
+<div class="container">
+  <img src="https://img.icons8.com/ios/50/000000/verified-account.png" alt="Avatar">
+  <p>Hello, Welcome to Delonix Regia! This is Isaac, how may I assist you?</p>
+  <span class="time-right">11:00</span>
+</div>
+
+<div class="container darker">
+  <img src="https://img.icons8.com/ios/50/000000/user-male-circle-filled.png" alt="Avatar" class="right">
+  <p>Hi! I would like to enquire if the gym facility is open to all hotel residence?</p>
+  <span class="time-left">11:01</span>
+</div>
+
+<div class="container">
+  <img src="https://img.icons8.com/ios/50/000000/verified-account.png" alt="Avatar">
+  <p>Yes! The gym facility is strictly open to all Delonix Regia residences only.</p>
+  <span class="time-right">11:01</span>
+</div>
+
+<div class="container darker">
+  <img src="https://img.icons8.com/ios/50/000000/user-male-circle-filled.png" alt="Avatar" class="right">
+  <p>Okay. That's all I'm enquiring about, thank you for your kind service and patience!</p>
+  <span class="time-left">11:03</span>
+</div>
+<div class="container">
+  <img src="https://img.icons8.com/ios/50/000000/verified-account.png" alt="Avatar">
+  <p>It's my pleasure to serve you! If you do not have anymore enquiries, I will end the chat session. Thank you!</p>
+  <span class="time-right">11:03</span>
+</div>
+<div class="container">
+  <form class="m-0 p-0" action="" method="POST" autocomplete="off">
+    
+    <div class="row m-0 p-0">
+    <div class="col-9 m-0 p-1">
+    
+      <input id="text" class="mw-100 border rounded form-control" type="text" name="text" title="Type a message..." placeholder="Type a message..." required>
+      
+    </div>
+    <div class="col-3 m-0 p-1">
+    
+      <button class="btn btn-send btn-outline-secondary rounded border w-100" title="send" style="padding-right: 16px;"><i>send</i></button>
+          
+    </div>
+    </div>
+
+</form>
+</div>
+</div>
+</body>
+</html>

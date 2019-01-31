@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Delonix Regia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./main.css" /> -->
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="../../Downloads/Ubuntu">
+    <script src="./main.js"></script>
+    <style>
+    body, html   {
+    font-family: 'Ubuntu';
+    font-size: 15px;
+    background-color: #BCC3D4;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    }
+    .navbar-custom {
+        background: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    .navbar-brand , .navbar-nav .nav-item {
+      color: rgb(64, 80, 87);
+      font-size: 16px;
+      font-style: bold;
+    }
+    .navbar-brand:hover , .navbar-nav .nav-item:hover {
+      color: #AFD6E7;
+    }
+
+    .card   {
+        background-color: rgba(255, 255, 255, 0.7);
+        border: transparent;
+    }
+
+    .btn-book  {
+        background-color: rgba(139, 159, 168, 0.7);
+        color: #f1f1f1;
+        border: transparent;
+        border-radius: 0%;
+    }
+
+    .btn-book:hover  {
+        background-color: rgba(228, 228, 228, 0.438);
+        border-radius: 0%;
+    }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom bg-light">
+  <a class="navbar-brand" href="./index.html">DELONIX REGIA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="./rooms.html"><u>Rooms</u><span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="./facilities.html">Facilities</a>
+      <a class="nav-item nav-link" href="./chat.html">Chat</a>
+      <a class="nav-item nav-link" href="./signup.html">Sign Up</a>
+      <a class="nav-item nav-link" href="./login.html">Log In</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Deluxe Room Info -->
+
+<div class="card-deck" style="margin:50px 0px; width: 100%;">
+    <div class="card">
+      <div class="card-body text-center">
+        <img src="./img/pexels-photo-271624.jpeg" width="200" position="left">
+        <h4 class="card-text" style="padding-top: 40px;">Deluxe Room</h4>
+        <p class="card-text">
+            <p>One queen-size bed</p>
+            <p>Complimentary Fast Wi-fi</p>
+            <p>Television with cable channels</p>
+            <p>One bathroom and shower</p>
+            <p>Mini Lounge</p>
+        </p>
+      </div>
+      <button type="button" class="btn btn-book" onclick="location='./payment.html'">Book</button>
+    </div>
+    <div class="card">
+        <div class="card-body text-center">
+            <img src="./img/pexels-photo-164595.jpeg" width="200" position="left">
+            <h4 class="card-text" style="padding-top: 40px;">Premium Deluxe Room</h4>
+            <p class="card-text">
+                <p>One queen-size bed</p>
+                <p>Complimentary Fast Wi-fi</p>
+                <p>Television with cable channels</p>
+                <p>One bathroom and bathtub</p>
+                <p>Lounge</p>
+                <p>Balcony</p>
+            </p>
+        </div>
+        <button type="button" class="btn btn-book" onclick="location='./payment.html'">Book</button>
+    </div>
+    <div class="card">
+      <div class="card-body text-center">
+        <p class="card-text">
+            <img src="./img/pexels-photo-210265.jpeg" width="200" position="left">
+            <h4 class="card-text" style="padding-top: 20px;">Premium Deluxe Room</h4>
+            <p class="card-text">
+                <p>One king-size bed</p>
+                <p>Complimentary Fast Wi-fi</p>
+                <p>Television with cable channels</p>
+                <p>Two bathrooms and bathtubs</p>
+                <p>Jacuzzi</p>
+                <p>Premium-class Lounge</p>
+                <p>Balcony</p>
+            </p>
+      </div>
+      <button type="button" class="btn btn-book" onclick="location='./payment.html'">Book</button>
+    </div>
+  </div>
+</body>
+</html>
